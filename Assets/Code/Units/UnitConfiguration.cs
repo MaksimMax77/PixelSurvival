@@ -17,17 +17,13 @@ namespace Code.Units
         [SerializeField] private GameObject _unitObject;
         [SerializeField] private UnitType[] _enemyTypes;
         [SerializeField] private float _maxHealth;
-        [SerializeField] private bool _controlledByInput;
-        [SerializeField] private bool _isItemsCollector;
-        [SerializeField] private bool _cameraTarget;
+        [SerializeField] private bool _isUserUnit;
         [SerializeField] private FsmAction _rootAction; 
         public UnitType UnitType => _unitType;
         public GameObject UnitObject => _unitObject;
         public UnitType[] EnemyTypes => _enemyTypes;
         public float MaxHealth => _maxHealth;
-        public bool ControlledByInput => _controlledByInput;
-        public bool IsItemsCollector => _isItemsCollector;
-        public bool CameraTarget => _cameraTarget;
+        public bool IsUserUnit => _isUserUnit;
         public FsmAction RootAction => _rootAction;
     }
 }

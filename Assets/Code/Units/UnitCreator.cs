@@ -16,7 +16,7 @@ namespace Code.Units
         
         public Unit CreateUnit(UnitConfiguration unitConfiguration)
         {
-            var unit = unitConfiguration.IsItemsCollector ? _unitItemsCollectorFactory.Create() : _unitFactory.Create();
+            var unit = unitConfiguration.IsUserUnit ? _unitItemsCollectorFactory.Create() : _unitFactory.Create();
             unit.Install(unitConfiguration);
             return unit;
         }
