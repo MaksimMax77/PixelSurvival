@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bd81907968fcd44a0ee3bd893e28aa, type: 3}
+  m_Name: UnitsSpawnerSettings
+  m_EditorClassIdentifier: 
+  _spawnTime: 2
+  _configurationContainers:
+  - unitsAmount: 1
+    unitConfiguration:
+      _unitType: 0
+      _unitObject: {fileID: 7990081966728952710, guid: fd63d203c5097d0449e53bb3bc11db50, type: 3}
+      _enemyTypes: 01000000
+      _maxHealth: 100
+      _controlledByInput: 1
+      _isItemsCollector: 1
+      _cameraTarget: 1
+      _rootAction: {fileID: 11400000, guid: 21748f0702e925d4aa3c975042d2f2b6, type: 2}
+  - unitsAmount: 3
+    unitConfiguration:
+      _unitType: 1
+      _unitObject: {fileID: 681017936264486080, guid: 0d4c29be1eb6ebe44b01fe6c5afb5d69, type: 3}
+      _enemyTypes: 00000000
+      _maxHealth: 50
+      _controlledByInput: 0
+      _isItemsCollector: 0
+      _cameraTarget: 0
+      _rootAction: {fileID: 11400000, guid: 4efd3a41bf7f5eb4284ba7c65c464a87, type: 2}
