@@ -8,13 +8,11 @@ namespace Code.Fsm.States.Ai
     public class UnitState<T> : FsmAction.FsmState<T> where T : FsmAction
     {
         protected Unit _currentUnit;
-        protected OnDirectionMover _onDirectionMover;
         protected Unit _target; 
         
         public UnitState(T action, Blackboard blackboard) : base(action, blackboard)
         {
             SetCurrentUnit();
-            _onDirectionMover = new OnDirectionMover();
         }
         protected void SetTarget(string targetUnitValueName)
         {

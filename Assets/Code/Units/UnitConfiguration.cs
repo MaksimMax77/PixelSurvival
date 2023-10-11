@@ -7,7 +7,7 @@ namespace Code.Units
     public enum UnitType
     {
         Human,
-        MutantDog
+        Сreature
     }
     
     [Serializable]

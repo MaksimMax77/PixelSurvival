@@ -1,6 +1,7 @@
 using Code.ActionsSystem;
 using Code.ActionsSystem.Actions;
 using Code.Fsm.Core;
+using Code.ObjectMove;
 using UnityEngine;
 
 namespace Code.Fsm.States.Ai
@@ -33,7 +34,7 @@ namespace Code.Fsm.States.Ai
                 var pointPos = _movePoints[_vectorIndex];
                 var patrolPoint = new Vector3(_startPos.x + pointPos.x, _startPos.y + pointPos.y, _startPos.z+ pointPos.z);
                 
-                if (!_onDirectionMover.Move(_currentUnit.GameObject, patrolPoint, _moveSpeed))
+                if (!OnDirectionMover.Move(_currentUnit.GameObject, patrolPoint, _moveSpeed))
                 {
                     IncrementIndex();
                 }

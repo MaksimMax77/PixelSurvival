@@ -17,20 +17,16 @@ MonoBehaviour:
   - unitsAmount: 1
     unitConfiguration:
       _unitType: 0
-      _unitObject: {fileID: 7990081966728952710, guid: fd63d203c5097d0449e53bb3bc11db50, type: 3}
+      _unitObject: {fileID: 5406172536194320870, guid: d8e8a31efcf714d4c91f97435233ff22, type: 3}
       _enemyTypes: 01000000
       _maxHealth: 100
-      _controlledByInput: 1
-      _isItemsCollector: 1
-      _cameraTarget: 1
+      _isUserUnit: 1
       _rootAction: {fileID: 11400000, guid: 21748f0702e925d4aa3c975042d2f2b6, type: 2}
   - unitsAmount: 3
     unitConfiguration:
       _unitType: 1
-      _unitObject: {fileID: 681017936264486080, guid: 0d4c29be1eb6ebe44b01fe6c5afb5d69, type: 3}
+      _unitObject: {fileID: 5880999328312529190, guid: 6ba5930612e6b8140ac459b5d0cf64d8, type: 3}
       _enemyTypes: 00000000
       _maxHealth: 50
-      _controlledByInput: 0
-      _isItemsCollector: 0
-      _cameraTarget: 0
+      _isUserUnit: 0
       _rootAction: {fileID: 11400000, guid: 4efd3a41bf7f5eb4284ba7c65c464a87, type: 2}

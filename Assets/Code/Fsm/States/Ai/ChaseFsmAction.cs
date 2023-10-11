@@ -1,6 +1,7 @@
 using Code.ActionsSystem;
 using Code.ActionsSystem.Actions;
 using Code.Fsm.Core;
+using Code.ObjectMove;
 using UnityEngine;
 
 namespace Code.Fsm.States.Ai
@@ -28,7 +29,11 @@ namespace Code.Fsm.States.Ai
 
             public override void OnUpdate()
             {
-                _onDirectionMover.Move(_currentUnit.GameObject, _target.GameObject.transform.position,
+                if (_target.GameObject == null)
+                {
+                    return;
+                }
+                OnDirectionMover.Move(_currentUnit.GameObject, _target.GameObject.transform.position,
                     FsmAction._moveSpeed);
                 base.OnUpdate();
             }
